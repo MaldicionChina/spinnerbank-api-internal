@@ -3,5 +3,5 @@
 # ~~~~
 
 # Home page
-GET      /                           controllers.Application.home
-
+GET        /        controllers.Application.home
+GET        /user/:id/:document controllers.Application.productsUser(id: Int,document: Int)

@@ -14,4 +14,14 @@ object Application extends Controller {
     Ok(Json.toJson(us.products))
   }
 
+//  Return User's products based on id and types of document
+  def productsUser(document: Int, id: Int) = Action {
+    // Data based query
+
+   //List of products
+
+
+    Ok(views.html.home("Tipo Documento: "+document+ "Id: "+id))
+  }
+
 }
