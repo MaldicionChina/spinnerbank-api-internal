@@ -5,7 +5,7 @@ case class User(
                  documentNumber: Int,
                  firstName: String,
                  lastName: String,
-                 products: List[Int],
+                 products: List[String],
                  active: Boolean)
 
 object JsonFormats {

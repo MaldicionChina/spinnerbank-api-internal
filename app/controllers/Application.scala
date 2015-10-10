@@ -7,7 +7,7 @@ import play.api.libs.json.Json
 import models.User
 object Application extends Controller {
 
-  var listaInt = List(3, 4, 2, 7)
+  var listaInt = List("creditos", "CDT","Hipoteca", "Datadebito")
   var us = new User(1,1,"Holita","",listaInt,true);
   var us2 = new User(1,2,"prueba","",listaInt,true);
   var us3 = new User(1,3,"prueba2","",listaInt,true);
@@ -24,7 +24,8 @@ object Application extends Controller {
    //List of products
   val pr = usuarios.filter(x => (x.documentType ==document && x.documentNumber == id))
 
-    Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
+   // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
+  Ok(Json.toJson(pr.head.products))
   }
 
 }
