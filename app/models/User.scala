@@ -1,7 +1,7 @@
 package models
 
 case class User(
-                 documentType: String,
+                 documentType: Int,
                  documentNumber: Int,
                  firstName: String,
                  lastName: String,
