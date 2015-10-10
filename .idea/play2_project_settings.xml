@@ -3,6 +3,13 @@
   <component name="Play2ExcludedModulesSettings">
     <option name="INFO">
       <map>
+        <entry key="flame-internal_back_end-rest-scala">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.3.8.jar" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
