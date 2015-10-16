@@ -5,37 +5,41 @@ import play.api.libs.json.Json
 //import play.api.libs.ws.WS
 //import scala.concurrent.Future
 
+import models.Product
+import models.User
+
 import models.User
 
 object Application extends Controller {
 
-  var listaInt = List("creditos", "CDT", "Hipoteca", "Datadebito")
-  var us = new User(1, 1, "Holita", "", listaInt, true);
-  var us2 = new User(1, 2, "prueba", "", listaInt, true);
-  var us3 = new User(1, 3, "prueba2", "", listaInt, true);
-  var usuarios = List(us, us2, us3);
+  // Datos para HU 4
+  var producto1 = new Product("CDT",1,200.25)
+  var producto2 = new Product("Debito",2,2000000)
+  var producto3 = new Product("Credito",3,1500000)
 
+  var user1 = new User(1,1017224184,"Alexis Rodriguez",List(producto2,producto1))
+  var user2 = new User(3,1017224185,"Emmanuel Velez",List(producto3,producto1,producto2))
+  var user3 = new User(4,1017224186,"Lixander Cadavid",List(producto2))
 
-  //  Datos de prueba para detalle de producto
+  var usuarios = List(user1, user2, user3);
+
+    //  Datos de prueba para detalle de producto
   var productName = "credito";
   var listDetail = "[{\"id\":1,\"name\":\"CDT\",\"productType\":\"Preferencial\",\"createdAt\":" +
     "\"2015-10-14T21:25:41.456Z\",\"updatedAt\":\"2015-10-14T21:25:41.456Z\",\"CustomerProduct\":" +
     "{\"balance\":\"100.00\",\"createdAt\":\"2015-10-14T21:25:41.525Z\",\"updatedAt\":\"2015-10-14T21:25:41.525Z\"," +
     "\"ProductId\":1,\"CustomerId\":1}}]"
 
-  def home = Action {
-    Ok(Json.toJson(us.products))
-  }
-
-  //  Return User's products based on id and types of document
+  //  Return User's products based on id and types of document HU 4
   def productsUser(document: Int, id: Int) = Action {
     // Query a la base de datos SQL
 
+
     //List of products
-    val pr = usuarios.filter(x => (x.documentType == document && x.documentNumber == id))
+  // val pr = usuarios.filter(usuario =>  usuario.documentType == id  && usuario.documentNumber == document)
 
     // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
-    Ok(Json.toJson(pr.head.products))
+    Ok(Json.toJson(usuarios.head.userName))
   }
 
 

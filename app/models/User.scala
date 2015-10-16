@@ -1,16 +1,10 @@
 package models
 
-case class User(
-                 documentType: Int,
-                 documentNumber: Int,
-                 firstName: String,
-                 lastName: String,
-                 products: List[String],
-                 active: Boolean)
+import models.Product
 
-object JsonFormats {
-  import play.api.libs.json.Json
-
-  // Generates Writes and Reads for Feed and User thanks to Json Macros
-  implicit val userFormat = Json.format[User]
-}
+class User(
+               var documentType: Int,
+               var documentNumber: Int,
+               var userName: String,
+               var products: List[Product]
+            )
