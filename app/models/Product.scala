@@ -8,4 +8,3 @@ class Product(
                var productType: Int,
                var productBalance: Double
                )
-

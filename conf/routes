@@ -7,7 +7,7 @@
 
 # URL para consultar la lista de prodcutos asociados a un cliente
 # de acuerdo al número y tipo de identificación
-GET        /user/:id/:document/products/       controllers.Application.productsUser(id: Int,document: Int)
+GET        /user/:typeDocument/:idUser/products/       controllers.Application.productsUser(typeDocument: Int, idUser: Int)
 
 # URL para consultar los movimientos de un producto asociados a un
 # cliente de acuerdo al número de indentificación,tipo de identificación
