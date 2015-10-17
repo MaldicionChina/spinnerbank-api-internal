@@ -47,11 +47,11 @@ object Application extends Controller {
      val pr = usuarios.filter(usuario =>  usuario.documentType == typeDocument  && usuario.documentNumber == idUser)
 
     // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
-<<<<<<< HEAD
+
     Ok(pr.head.name)
-=======
-    Ok(Json.toJson(user1))
->>>>>>> 759183f257fa478f457a1f9f33f0aed2c58bfcef
+
+    Ok(user1.toJson())
+
   }
 
 
