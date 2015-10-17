@@ -47,7 +47,7 @@ object Application extends Controller {
      val pr = usuarios.filter(usuario =>  usuario.documentType == typeDocument  && usuario.documentNumber == idUser)
 
     // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
-    Ok(pr.head.userName)
+    Ok(Json.toJson(user1))
   }
 
 

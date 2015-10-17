@@ -1,10 +1,15 @@
 package models
 
-import models.Product
+import play.api.libs.json.Json
 
-class User(
+case class User(
                var documentType: Int,
                var documentNumber: Int,
                var userName: String,
                var products: List[Product]
             )
+
+object User{
+  implicit val userFormat = Json.format[User]
+}
+
