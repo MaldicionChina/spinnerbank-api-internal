@@ -59,7 +59,8 @@ object Application extends Controller {
 //    // Consumo del API del back-end-legacy
 //    // EJ de URL: https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/1/products
 //
-
-    Ok(user1.toJson)
+val pr = usuarios.filter(usuario =>  usuario.documentType == typeDocument  && usuario.documentNumber == idUser)
+ pr.head.products = pr.head.products.filter( prd => prd.productType==productId)
+    Ok(pr.head.toJson())
   }
 }
