@@ -48,9 +48,9 @@ object Application extends Controller {
 
     // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
 
-    Ok(pr.head.name)
+    Ok(pr.head.toJsonNoMoves())
 
-    Ok(user1.toJsonNoMoves())//false sin moviemientos
+//    Ok(user1.toJsonNoMoves())//false sin moviemientos
 
   }
 
