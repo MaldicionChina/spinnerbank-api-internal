@@ -1,5 +1,5 @@
-New log file opened at Sat Oct 17 13:58:49 COT 2015 by 7371@hedeon-N56VJ
-jvm 7371@hedeon-N56VJ
+New log file opened at Sat Oct 17 14:31:46 COT 2015 by 8533@hedeon-N56VJ
+jvm 8533@hedeon-N56VJ
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/hedeon/SpinnerBankInternalApi/project, returning: (spinnerbankinternalapi-build)
 Loading project definition from /home/hedeon/SpinnerBankInternalApi/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@482e8142, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@610a8500, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,282 +69,57 @@ Set current project to SpinnerBankInternalApi (in build file:/home/hedeon/Spinne
 > server-handle-next-server-request
 > {file:/home/hedeon/SpinnerBankInternalApi/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@73f9d058, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c47534a, check cycles: false
 
 Initial source changes: 
-	removed:Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-	added: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala)
-	modified: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+	removed:Set()
+	added: Set()
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
+All initially invalidated sources: Set()
 
-Recompiling all 11 sources: invalidated sources (12) exceeded 50.0% of all sources
-Read from stdout: Compiling 10 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Compiling 10 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 9139179, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/jdk1.8.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_60/jre/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-	-classpath
-	/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/hedeon/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hedeon/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hedeon/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hedeon/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hedeon/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hedeon/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.2.0.jar:/home/hedeon/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.2.jar
-Read from stdout: /home/hedeon/SpinnerBankInternalApi/app/views/index.scala.html:3: not found: value main
-/home/hedeon/SpinnerBankInternalApi/app/views/index.scala.html:3: not found: value main
-Read from stdout: @main("Welcome to Play") {
-@main("Welcome to Play") {
-Read from stdout: ^
- ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 4 s, completed 17/10/2015 01:58:58 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hedeon/SpinnerBankInternalApi/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@a2fc963, check cycles: false
-Total time: 0 s, completed 17/10/2015 01:58:58 PM
+Total time: 1 s, completed 17/10/2015 02:31:50 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/hedeon/SpinnerBankInternalApi/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7f39e056, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@11f2d55f, check cycles: false
 
 Initial source changes: 
-	removed:Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-	added: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala)
-	modified: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+	removed:Set()
+	added: Set()
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
+All initially invalidated sources: Set()
 
-Recompiling all 11 sources: invalidated sources (12) exceeded 50.0% of all sources
-Read from stdout: Compiling 10 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Compiling 10 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 34cd93a, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/jdk1.8.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_60/jre/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-	-classpath
-	/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/hedeon/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hedeon/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hedeon/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hedeon/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hedeon/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hedeon/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.2.0.jar:/home/hedeon/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.2.jar
-Read from stdout: /home/hedeon/SpinnerBankInternalApi/app/views/index.scala.html:3: not found: value main
-/home/hedeon/SpinnerBankInternalApi/app/views/index.scala.html:3: not found: value main
-Read from stdout: @main("Welcome to Play") {
-@main("Welcome to Play") {
-Read from stdout: ^
- ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 2 s, completed 17/10/2015 01:58:59 PM
-> server-post-command-error-handler
+Total time: 0 s, completed 17/10/2015 02:31:51 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/hedeon/SpinnerBankInternalApi/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@5ea6e7e0, check cycles: false
-Total time: 0 s, completed 17/10/2015 01:59:00 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b910a08, check cycles: false
+Total time: 0 s, completed 17/10/2015 02:31:51 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@55119b81, check cycles: false
-
-Initial source changes: 
-	removed:Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-	added: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala)
-	modified: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-
-Recompiling all 10 sources: invalidated sources (12) exceeded 50.0% of all sources
-Read from stdout: Compiling 9 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Compiling 9 Scala sources and 1 Java source to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 48167e1d, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/jdk1.8.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_60/jre/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-	-classpath
-	/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/hedeon/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hedeon/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hedeon/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hedeon/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/hedeon/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/hedeon/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.2.0.jar:/home/hedeon/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.2.jar
-Scala compilation took 4.163769331 s
-Attempting to call com.sun.tools.javac.api.JavacTool@396ffdd3 directly...
-Java compilation took 0.52959661 s
-Java analysis took 0.038580824 s
-Java compile + analysis took 0.575140867 s
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala source file has the following regular definitions changed:
-	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, detailProductUser, $isInstanceOf, ReverseAssets, notifyAll, isInstanceOf, <init>, ==, clone, toString, !=, getClass, productsUser, ne, versioned, eq, ##, finalize, index, hashCode.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java
-Invalidating /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala)
-The /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala source file has the following implicit definitions changed:
-	request2flash, request2lang, request2session.
-All member reference dependencies will be considered within this context.
-The following member ref dependencies of /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala are invalidated:
-	/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java source file has the following regular definitions changed:
-	Assets.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java
-Invalidating /home/hedeon/SpinnerBankInternalApi/app/models/User.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/app/models/User.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/app/models/User.scala)
-The /home/hedeon/SpinnerBankInternalApi/app/models/User.scala source file has the following regular definitions changed:
-	notify, name, wait, copy$default$2, $asInstanceOf, productArity, equals, asInstanceOf, documentNumber, synchronized, $isInstanceOf, canEqual, products, copy$default$4, productPrefix, notifyAll, isInstanceOf, toJsonNoMoves, <init>, ==, listToJson2, clone, toJson, listToJson, documentType, User, copy$default$3, copy, toString, !=, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala: Set(documentNumber, products, toJsonNoMoves, <init>, ==, toJson, documentType, User)
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/home.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, home_Scope0, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, home, <init>, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/app/models/Product.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/app/models/Product.scala)
-The /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala source file has the following regular definitions changed:
-	notify, movements, wait, copy$default$2, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, copy$default$4, productBalance, productPrefix, productType, notifyAll, isInstanceOf, toJsonNoMoves, <init>, ==, clone, toJson, listToJson, productName, copy$default$3, copy, toString, !=, getClass, copy$default$1, Product, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala: Set(productType, toJsonNoMoves, <init>, ==, toJson, Product)
-The following modified names cause invalidation of /home/hedeon/SpinnerBankInternalApi/app/models/User.scala: Set(asInstanceOf, isInstanceOf, toJsonNoMoves, <init>, ==, toJson, listToJson, toString, Product, eq)
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/index.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, index_Scope0, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, index, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
-	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, detailProductUser, $isInstanceOf, ReverseAssets, notifyAll, isInstanceOf, <init>, ==, clone, toString, !=, getClass, productsUser, ne, versioned, eq, ##, finalize, index, hashCode.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/controllers/routes.java
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/twirl/main/views/html/main.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, main, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, main_Scope0, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala)
-The /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/routes/main/router/Routes.scala source file has the following regular definitions changed:
-	notify, controllers_Application_productsUser0_route, badRequest, wait, $asInstanceOf, controllers_Application_productsUser0_invoker, routes, createInvoker, controllers_Assets_versioned1_invoker, equals, prefix, asInstanceOf, documentation, controllers_Application_index0_invoker, synchronized, $isInstanceOf, handlerFor, controllers_Application_detailProductUser1_route, _prefix, notifyAll, isInstanceOf, errorHandler, <init>, ==, clone, Routes, controllers_Assets_versioned1_route, toString, controllers_Application_detailProductUser1_invoker, !=, fakeValue, getClass, controllers_Application_index0_route, ne, withPrefix, call, eq, defaultPrefix, ##, finalize, hashCode.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala)
-The /home/hedeon/SpinnerBankInternalApi/app/models/Movement.scala source file has the following regular definitions changed:
-	notify, wait, copy$default$2, $asInstanceOf, productArity, equals, description, dateMovement, asInstanceOf, synchronized, $isInstanceOf, canEqual, copy$default$4, valueMovement, productPrefix, notifyAll, isInstanceOf, <init>, id, ==, clone, toJson, copy$default$3, copy, toString, !=, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, Movement, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /home/hedeon/SpinnerBankInternalApi/app/models/Product.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, toJson, toString, eq, Movement)
-The following modified names cause invalidation of /home/hedeon/SpinnerBankInternalApi/app/controllers/Application.scala: Set(<init>, ==, toJson, Movement)
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed 17/10/2015 02:00:48 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@10ec9cdf, check cycles: false
-Total time: 0 s, completed 17/10/2015 02:01:06 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hedeon/SpinnerBankInternalApi/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@72b9d03a, check cycles: false
-Total time: 0 s, completed 17/10/2015 02:01:08 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@53d6557f, check cycles: false
-Total time: 0 s, completed 17/10/2015 02:01:09 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/hedeon/SpinnerBankInternalApi/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@43037929, check cycles: false
+> {file:/home/hedeon/SpinnerBankInternalApi/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@b879026, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -361,128 +136,6 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Copy resource mappings: 
-	(/home/hedeon/SpinnerBankInternalApi/conf/logback.xml,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/logback.xml)
-	(/home/hedeon/SpinnerBankInternalApi/conf/application.conf,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/application.conf)
-	(/home/hedeon/SpinnerBankInternalApi/conf/routes,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/routes)
-Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 1 s, completed 17/10/2015 02:03:50 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@4c203f43, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/hedeon/SpinnerBankInternalApi/conf/logback.xml,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/logback.xml)
-	(/home/hedeon/SpinnerBankInternalApi/conf/application.conf,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/application.conf)
-	(/home/hedeon/SpinnerBankInternalApi/conf/routes,/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes/routes)
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala, /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala, /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala, /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala)
-
-Recompiling all 2 sources: invalidated sources (2) exceeded 50.0% of all sources
-Read from stdout: Compiling 2 Scala sources to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/test-classes...
-Compiling 2 Scala sources to /home/hedeon/SpinnerBankInternalApi/target/scala-2.11/test-classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 60205b8c, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/jdk1.8.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_60/jre/classes:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
-	-classpath
-	/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/test-classes:/home/hedeon/SpinnerBankInternalApi/target/scala-2.11/classes:/home/hedeon/SpinnerBankInternalApi/target/web/classes/main:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/hedeon/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/home/hedeon/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/hedeon/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/hedeon/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/hedeon/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.zaxxer/HikariCP/2.3.7/bundles/HikariCP.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.h2database/h2/1.4.187/jars/h2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/hedeon/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/hedeon/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.2.0.jar:/home/hedeon/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.2.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-test_2.11/jars/play-test_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/junit/junit/4.12/jars/junit.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.hamcrest/hamcrest-core/1.3/jars/hamcrest-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.novocode/junit-interface/0.11/jars/junit-interface.jar:/home/hedeon/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.fluentlenium/fluentlenium-core/0.10.3/jars/fluentlenium-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-java/2.44.0/jars/selenium-java.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-chrome-driver/2.44.0/jars/selenium-chrome-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-remote-driver/2.44.0/jars/selenium-remote-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/cglib/cglib-nodep/2.1_3/jars/cglib-nodep.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/com.google.code.gson/gson/2.3/jars/gson.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-api/2.44.0/jars/selenium-api.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.3.4/jars/httpclient.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.3.2/jars/httpcore.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-logging/commons-logging/1.1.3/jars/commons-logging.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.commons/commons-exec/1.1/jars/commons-exec.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.java.dev.jna/jna/3.4.0/jars/jna.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.java.dev.jna/platform/3.4.0/jars/platform.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-htmlunit-driver/2.44.0/jars/selenium-htmlunit-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sourceforge.htmlunit/htmlunit/2.15/jars/htmlunit.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/xalan/xalan/2.7.1/jars/xalan.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/xalan/serializer/2.7.1/jars/serializer.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-collections/commons-collections/3.2.1/jars/commons-collections.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpmime/4.3.3/jars/httpmime.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sourceforge.htmlunit/htmlunit-core-js/2.15/jars/htmlunit-core-js.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sourceforge.nekohtml/nekohtml/1.9.21/jars/nekohtml.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/net.sourceforge.cssparser/cssparser/0.9.14/jars/cssparser.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.w3c.css/sac/1.3/jars/sac.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/commons-io/commons-io/2.4/jars/commons-io.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.eclipse.jetty/jetty-websocket/8.1.15.v20140411/jars/jetty-websocket.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.eclipse.jetty/jetty-util/8.1.15.v20140411/jars/jetty-util.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.eclipse.jetty/jetty-io/8.1.15.v20140411/jars/jetty-io.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.eclipse.jetty/jetty-http/8.1.15.v20140411/jars/jetty-http.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-firefox-driver/2.44.0/jars/selenium-firefox-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-ie-driver/2.44.0/jars/selenium-ie-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-safari-driver/2.44.0/jars/selenium-safari-driver.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.webbitserver/webbit/0.4.14/jars/webbit.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.seleniumhq.selenium/selenium-support/2.44.0/jars/selenium-support.jar:/home/hedeon/.ivy2/cache/com.typesafe.play/play-specs2_2.11/jars/play-specs2_2.11-2.4.3.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.specs2/specs2-core_2.11/3.6/jars/specs2-core_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.specs2/specs2-matcher_2.11/3.6/jars/specs2-matcher_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.specs2/specs2-common_2.11/3.6/jars/specs2-common_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scalaz/scalaz-core_2.11/7.1.1/bundles/scalaz-core_2.11.jar:/home/hedeon/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.2.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scalaz/scalaz-concurrent_2.11/7.1.1/bundles/scalaz-concurrent_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scalaz/scalaz-effect_2.11/7.1.1/bundles/scalaz-effect_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scalaz.stream/scalaz-stream_2.11/0.7a/bundles/scalaz-stream_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.scodec/scodec-bits_2.11/1.0.6/bundles/scodec-bits_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.specs2/specs2-junit_2.11/3.6/jars/specs2-junit_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.specs2/specs2-mock_2.11/3.6/jars/specs2-mock_2.11.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.mockito/mockito-core/1.9.5/jars/mockito-core.jar:/home/hedeon/Descargas/activator-dist-1.3.6/repository/org.objenesis/objenesis/1.0/jars/objenesis.jar
-Scala compilation took 4.712302533 s
-Invalidating /home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala)
-The /home/hedeon/SpinnerBankInternalApi/test/IntegrationSpec.scala source file has the following implicit definitions changed:
-	executionEnvFunctionIsInterpolatedFragment, seqToResult, blockExample, TupleMatcher8, specStructureIsInterpolatedFragment, describeExpectation, argumentsFunctionIsInterpolatedFragment, descriptionToFragmentsIsInterpolatedFragment, envFunctionIsInterpolatedFragment, typedEqualExpectation, asResult, toNotStringMatcher, akaShould, thisBlock, fragmentAsSpecStructure, ContainSeqMatcherFunction, resultFunction, matcherSeqIsContainCheckSeq, functionToMatcher, TupleMatcher11, bangExample, implicitsAreAllowed, TupleMatcher3, TupleMatcher14, EitherResultMatcher, executionIsInterpolatedFragment, akaMust, AdaptFunction, toExceptionMatcher, functionAndMessagesToMatcher, fragmentsFormatting, stringAsSpecStructure, implicitParameter7, toNeutralMatcherNumeric, TupleMatcher10, anyBeHaveMatcher, implicitParameter4, fragmentFormatting, specificationRefIsInterpolatedFragment, toMapValueResultMatcher, functionToMatcher2, anyAsResultIsInterpolatedFragment, TupleMatcher21, mutableSeeFragment, fragmentIsInterpolatedFragment, appendToFragments, toNeutralMatcherOrdered, executorServiceFunctionIsInterpolatedFragment, InvariantMatcherFunction, stringMatcherIsTraversableMatcher, pairFunctionToMatcher, theValue, anyToArgProperty, implicitParameter6, combineBoolean, TupleMatcher6, TupleMatcher15, functionIsValueCheck, MatcherFunction, stringMatcher, TupleMatcher7, FutureMatchable, toMapKeyResultMatcher, timesFor, FragmentsTaggedAs, toStringResultMatcher, tripletFunctionToMatcher, mutableLinkFragment, fragmentToFragments, partialfunctionIsValueCheck, toTryResultMatcher, appendSpecStructureToSpecHeader, stringIsInterpolatedFragment, statsRepositoryFunctionIsInterpolatedFragment, specHeaderAsStructure, downcastBeEqualTypedValueCheck, describe, fragmentsAsSpecStructure, commandLineFunctionIsInterpolatedFragment, specificationStructureIsInterpolatedFragment, resultAsSpecStructure, stringMatcherFunctionToBynameMatcherFunction, TupleMatcher20, implicitParameter1, SignificantFiguresSyntax, debug, TupleMatcher22, futureAsResult, eg, functionAndKoMessageToMatcher, matcherIsValueCheck, implicitParameter5, TupleMatcher5, TupleMatcher16, SignificantSyntax, textFragment, appendToString, toAnyMatcherResult, stringFunctionIsInterpolatedFragment, implicitParameter9, theBlock, appendSpecStructureToString, appendToFragment, toOrderedResultMatcher, combineMatchResult, ***If you see this message this means that you've forgotten an operator after the description string: you should write "example" >> result ***, checkableSeqIsContainCheckSeq, FragmentTaggedAs, specStructureAsFragments, toAnyRefMatcherResult, HiddenFragment, ToDelta, MutedFragment, executionContextFunctionIsInterpolatedFragment, toPendingUntilFixed, toMapResultMatcher, TupleMatcher12, postfixOpsAreAllowed, implicitParameter2, TupleMatcher19, matchResultFunctionToMatcher, lazyParameter, TupleMatcher17, orderedSeqMatchResult, asResultIsInterpolatedFragment, implicitParameter10, specificationInStringContext, TupleMatcher18, anyWithEmpty, appendSpecStructureToFragment, traversable, toNeutralStringMatcher, TupleMatcher4, title, appendSpecStructureToFragments, linkFragment, commandLineAsResultIsInterpolatedFragment, TupleMatcher9, toBeLikeResultMatcher, thisValue, combineResult, seeFragment, implicitParameter8, toNumericResultMatcher, toResult, stepParserIsInterpolatedFragment, executionEnvToExecutionContext, fromMatchResult, sized, toPartialFunctionResultMatcher, implicitParameter, TupleMatcher13, executionEnvToExecutorService, appendToArguments, toOptionResultMatcher, fragmentsIsInterpolatedFragment, toClassMatcherResult, implicitParameter3, TupleMatcher2, appendSpecStructureToSpecStructure, FuturezMatchable.
-All member reference dependencies will be considered within this context.
-Invalidating /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala...
-Invalidating (transitively) by inheritance from /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala...
-Initial set of included nodes: Set(/home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala)
-Invalidated by transitive inheritance dependency: Set(/home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala)
-The /home/hedeon/SpinnerBankInternalApi/test/ApplicationSpec.scala source file has the following implicit definitions changed:
-	executionEnvFunctionIsInterpolatedFragment, seqToResult, blockExample, TupleMatcher8, specStructureIsInterpolatedFragment, describeExpectation, argumentsFunctionIsInterpolatedFragment, descriptionToFragmentsIsInterpolatedFragment, envFunctionIsInterpolatedFragment, typedEqualExpectation, asResult, toNotStringMatcher, akaShould, thisBlock, fragmentAsSpecStructure, ContainSeqMatcherFunction, resultFunction, matcherSeqIsContainCheckSeq, functionToMatcher, TupleMatcher11, bangExample, implicitsAreAllowed, TupleMatcher3, TupleMatcher14, EitherResultMatcher, executionIsInterpolatedFragment, akaMust, AdaptFunction, toExceptionMatcher, functionAndMessagesToMatcher, fragmentsFormatting, stringAsSpecStructure, implicitParameter7, toNeutralMatcherNumeric, TupleMatcher10, anyBeHaveMatcher, implicitParameter4, fragmentFormatting, specificationRefIsInterpolatedFragment, toMapValueResultMatcher, functionToMatcher2, anyAsResultIsInterpolatedFragment, TupleMatcher21, mutableSeeFragment, fragmentIsInterpolatedFragment, appendToFragments, toNeutralMatcherOrdered, executorServiceFunctionIsInterpolatedFragment, InvariantMatcherFunction, stringMatcherIsTraversableMatcher, pairFunctionToMatcher, theValue, anyToArgProperty, implicitParameter6, combineBoolean, TupleMatcher6, TupleMatcher15, functionIsValueCheck, MatcherFunction, stringMatcher, TupleMatcher7, FutureMatchable, toMapKeyResultMatcher, timesFor, FragmentsTaggedAs, toStringResultMatcher, tripletFunctionToMatcher, mutableLinkFragment, fragmentToFragments, partialfunctionIsValueCheck, toTryResultMatcher, appendSpecStructureToSpecHeader, stringIsInterpolatedFragment, statsRepositoryFunctionIsInterpolatedFragment, specHeaderAsStructure, downcastBeEqualTypedValueCheck, describe, fragmentsAsSpecStructure, commandLineFunctionIsInterpolatedFragment, specificationStructureIsInterpolatedFragment, resultAsSpecStructure, stringMatcherFunctionToBynameMatcherFunction, TupleMatcher20, implicitParameter1, SignificantFiguresSyntax, debug, TupleMatcher22, futureAsResult, eg, functionAndKoMessageToMatcher, matcherIsValueCheck, implicitParameter5, TupleMatcher5, TupleMatcher16, SignificantSyntax, textFragment, appendToString, toAnyMatcherResult, stringFunctionIsInterpolatedFragment, implicitParameter9, theBlock, appendSpecStructureToString, appendToFragment, toOrderedResultMatcher, combineMatchResult, ***If you see this message this means that you've forgotten an operator after the description string: you should write "example" >> result ***, checkableSeqIsContainCheckSeq, FragmentTaggedAs, specStructureAsFragments, toAnyRefMatcherResult, HiddenFragment, ToDelta, MutedFragment, executionContextFunctionIsInterpolatedFragment, toPendingUntilFixed, toMapResultMatcher, TupleMatcher12, postfixOpsAreAllowed, implicitParameter2, TupleMatcher19, matchResultFunctionToMatcher, lazyParameter, TupleMatcher17, orderedSeqMatchResult, asResultIsInterpolatedFragment, implicitParameter10, specificationInStringContext, TupleMatcher18, anyWithEmpty, appendSpecStructureToFragment, traversable, toNeutralStringMatcher, TupleMatcher4, title, appendSpecStructureToFragments, linkFragment, commandLineAsResultIsInterpolatedFragment, TupleMatcher9, toBeLikeResultMatcher, thisValue, combineResult, seeFragment, implicitParameter8, toNumericResultMatcher, toResult, stepParserIsInterpolatedFragment, executionEnvToExecutionContext, fromMatchResult, sized, toPartialFunctionResultMatcher, implicitParameter, TupleMatcher13, executionEnvToExecutorService, appendToArguments, toOptionResultMatcher, fragmentsIsInterpolatedFragment, toClassMatcherResult, implicitParameter3, TupleMatcher2, appendSpecStructureToSpecStructure, FuturezMatchable.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@558aed48))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@7214f37d), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@7076b0da))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for org.specs2.runner.Specs2Framework produced 2 initial tasks for 2 tests.
-  Running TaskDef(IntegrationSpec, sbt.ForkMain$SubclassFingerscan@5f1444b5, false, [SuiteSelector])
-
-Canceling execution...
-Exception in thread "Thread-6" java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.net.SocketInputStream.read(SocketInputStream.java:223)
-	at java.io.ObjectInputStream$PeekInputStream.peek(ObjectInputStream.java:2303)
-	at java.io.ObjectInputStream$BlockDataInputStream.peek(ObjectInputStream.java:2596)
-	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2606)
-	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1319)
-	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:371)
-	at sbt.React.react(ForkTests.scala:114)
-	at sbt.ForkTests$$anonfun$mainTestTask$1$Acceptor$2$.run(ForkTests.scala:74)
-	at java.lang.Thread.run(Thread.java:745)
-Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@6ac036f0 rejected from java.util.concurrent.ThreadPoolExecutor@38a21664[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 447]
-java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@6ac036f0 rejected from java.util.concurrent.ThreadPoolExecutor@38a21664[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 447]
-Use 'last' for the full log.
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@4d14e35a, check cycles: false
-Total time: 0 s, completed 17/10/2015 02:05:15 PM
+Total time: 0 s, completed 17/10/2015 02:31:51 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
