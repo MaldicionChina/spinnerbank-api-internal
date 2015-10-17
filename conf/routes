@@ -12,4 +12,4 @@ GET        /user/:typeDocument/:idUser/products/       controllers.Application.p
 # URL para consultar los movimientos de un producto asociados a un
 # cliente de acuerdo al número de indentificación,tipo de identificación
 # y id del cliente
-GET       /user/:id/:document/product/:productId/detail/  controllers.Application.detailProductUser(id: Int,document: Int, productId: Int)
+GET       /user/:typeDocument/:idUser/product/:productId/detail/  controllers.Application.detailProductUser(idUser: Int,typeDocument: Int, productId: Int)

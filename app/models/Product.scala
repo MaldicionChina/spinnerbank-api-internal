@@ -6,5 +6,6 @@ package models
 class Product(
                var productName: String,
                var productType: Int,
-               var productBalance: Double
+               var productBalance: Double,
+               var movements: List[Movement]
                )
