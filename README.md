@@ -22,4 +22,14 @@ $  sbt
 
 #### Finally
 
-http://127.0.0.1:9000/user/products/1/1 
+Product's Client
+
+/user/{typeOfDocument}/{numberOdDocument}/products
+
+Product's Movements
+
+/user/{typeOfDocument}/{numberOdDocument}/product/{idProduct}/detail
+
+##### Example
+
+http://localhost:9000/user/1/1017224184/products/
