@@ -1,10 +1,30 @@
 package models
-
-import models.Product
+import play.api.libs.json.Json
+import play.api.libs.json._
 
 class User(
                var documentType: Int,
                var documentNumber: Int,
-               var userName: String,
+               var name: String,
                var products: List[Product]
-            )
+            ){
+
+
+
+    def toJson() = Json.obj(
+      "documentType" -> this.documentType,
+      "documentNumber" -> this.documentNumber,
+      "name" -> this.name,
+      "producta"-> Json.toJson(this.listToJson())
+
+
+    )
+    def listToJson()=
+    {
+      var arry = this.products.map(x => x.toJson())
+      arry
+    }
+
+
+
+}

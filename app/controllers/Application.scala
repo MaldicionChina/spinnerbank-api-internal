@@ -47,7 +47,7 @@ object Application extends Controller {
      val pr = usuarios.filter(usuario =>  usuario.documentType == typeDocument  && usuario.documentNumber == idUser)
 
     // Ok(views.html.home("Tipo Documento: "+pr.head.documentType+ "Id: "+pr.head.firstName))
-    Ok(pr.head.userName)
+    Ok(pr.head.name)
   }
 
 
@@ -56,6 +56,6 @@ object Application extends Controller {
 //    // EJ de URL: https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/1/products
 //
 
-    Ok(Json.toJson("Not Work"))
+    Ok(user1.toJson())
   }
 }
