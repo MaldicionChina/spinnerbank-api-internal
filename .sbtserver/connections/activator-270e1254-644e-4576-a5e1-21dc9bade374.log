@@ -971,3 +971,37 @@ Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: DetachedLo
 Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup))
 Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: ExecutionSuccess(4)
 Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Got request: UnlistenToEvents()
+Reading next message from client.
+Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: (22,ReceivedResponse())
+Got request: UnlistenToValue(AttributeKey[scala.collection.Seq[java.lang.String]]("discoveredMainClasses") in Scope(Build: file:/home/hedeon/SpinnerBankInternalApi/, , Project: ProjectReference(file:/home/hedeon/SpinnerBankInternalApi/,root), Config: compile))
+Reading next message from client.
+Got request: UnlistenToValue(AttributeKey[scala.Option[java.lang.String]]("mainClass") in Scope(Build: file:/home/hedeon/SpinnerBankInternalApi/, , Project: ProjectReference(file:/home/hedeon/SpinnerBankInternalApi/,root), Config: compile))
+Reading next message from client.
+Sending msg to client activator-270e1254-644e-4576-a5e1-21dc9bade374: (23,ReceivedResponse())
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Client activator-270e1254-644e-4576-a5e1-21dc9bade374 EOF, shutting down.
+Stopping client.
+Dropping message (23,ReceivedResponse()) because client activator-270e1254-644e-4576-a5e1-21dc9bade374 of an exception serializing and sending: java.net.SocketException: Tubería rota
+stack trace sending message was 
+java.net.SocketException: Tubería rota
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at sbt.impl.ipc.Peer.send(IPC.scala:79)
+	at sbt.impl.ipc.Peer.reply(IPC.scala:88)
+	at sbt.impl.ipc.Peer.replyString(IPC.scala:111)
+	at sbt.impl.ipc.Peer.replyJson(IPC.scala:124)
+	at sbt.server.SbtClientHandler$$anonfun$reply$1.apply$mcV$sp(SbtClientHandler.scala:132)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.reply(SbtClientHandler.scala:132)
+	at sbt.server.RequestProcessor.sbt$server$RequestProcessor$$handleRequestsWithBuildState(RequestProcessor.scala:443)
+	at sbt.server.RequestProcessor.run(RequestProcessor.scala:324)
+Dropping message (24,ReceivedResponse()) to dead client activator-270e1254-644e-4576-a5e1-21dc9bade374
+Dropping message (25,ReceivedResponse()) to dead client activator-270e1254-644e-4576-a5e1-21dc9bade374
+Dropping message (0,ReceivedResponse()) to dead client activator-270e1254-644e-4576-a5e1-21dc9bade374
+Client activator-270e1254-644e-4576-a5e1-21dc9bade374 thread exiting.
