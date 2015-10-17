@@ -1,12 +1,18 @@
 package models
+
 import play.api.libs.json.Json
 import play.api.libs.json._
 
-class User(
+
+import play.api.libs.json.Json
+
+
+case class User(
                var documentType: Int,
                var documentNumber: Int,
                var name: String,
                var products: List[Product]
+
             ){
 
 
