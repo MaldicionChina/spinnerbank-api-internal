@@ -50,7 +50,7 @@ object Application extends Controller {
 
     Ok(pr.head.name)
 
-    Ok(user1.toJson())
+    Ok(user1.toJsonNoMoves())//false sin moviemientos
 
   }
 
@@ -60,6 +60,6 @@ object Application extends Controller {
 //    // EJ de URL: https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/1/products
 //
 
-    Ok(user1.toJson())
+    Ok(user1.toJson)
   }
 }

@@ -19,6 +19,11 @@ case class Product(
     "ProductBalance" -> this.productBalance,
     "Movements" -> Json.toJson(this.listToJson())
 
+  )
+  def toJsonNoMoves() = Json.obj(
+    "productName" -> this.productName,
+    "productType" -> this.productType,
+    "ProductBalance" -> this.productBalance
 
   )
 
