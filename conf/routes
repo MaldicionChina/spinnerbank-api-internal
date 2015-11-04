@@ -3,5 +3,25 @@
 # ~~~~
 
 # Home page
-#GET        /        controllers.Application.home
-GET        /user/products/:id/:document controllers.Application.productsUser(id: Int,document: Int)
+GET        /        @controllers.Application.home
+
+# URL para consultar la lista de prodcutos asociados a un cliente
+# de acuerdo al número y tipo de identificación
+#GET /user/:typeDocument/:idUser/products/ @controllers.Application.productsUser(typeDocument: Int, idUser: Int)
+
+
+# URL para consultar los movimientos de un producto asociados a un
+# cliente de acuerdo al número de indentificación,tipo de identificación
+# y id del cliente
+#GET       /user/:typeDocument/:idUser/product/:productId/detail/  @controllers.Application.detailProductUser(idUser: Int,typeDocument: Int, productId: Int)
+
+
+#URL para consultar todos los movimientos
+GET       /movements                  @controllers.Application.findAllMovements
+
+#insertando, se debe hacer con post, dejamos el get para demostracion
+GET    /movements/new/:id/:valueMovement/:description             @controllers.Application.createMovement(id: Int,valueMovement: Double,description: String)
+
+
+#URL para consultar movimientos de id
+GET       /movements/:id                 @controllers.Application.findMovementById(id: Int)

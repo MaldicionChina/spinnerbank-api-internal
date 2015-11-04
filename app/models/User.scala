@@ -1,16 +1,44 @@
 package models
 
+import play.api.libs.json.Json
+import play.api.libs.json._
+
+
+import play.api.libs.json.Json
+
+
 case class User(
-                 documentType: Int,
-                 documentNumber: Int,
-                 firstName: String,
-                 lastName: String,
-                 products: List[String],
-                 active: Boolean)
+                 var documentType: Int,
+                 var documentNumber: Int,
+                 var name: String,
+                 var products: List[Product]
 
-object JsonFormats {
-  import play.api.libs.json.Json
+                 ) {
 
-  // Generates Writes and Reads for Feed and User thanks to Json Macros
-  implicit val userFormat = Json.format[User]
+
+  def toJson() = Json.obj(
+    "documentType" -> this.documentType,
+    "documentNumber" -> this.documentNumber,
+    "name" -> this.name,
+    "products" -> Json.toJson(this.listToJson())
+  )
+
+def toJsonNoMoves() = Json.obj(
+    "documentType" -> this.documentType,
+    "documentNumber" -> this.documentNumber,
+    "name" -> this.name,
+    "products" -> Json.toJson(this.listToJson2())
+  )
+
+  def listToJson() = {
+    var arry = this.products.map(x => x.toJson())
+    arry
+  }
+  def listToJson2() = {
+    var arry = this.products.map(x => x.toJsonNoMoves())
+    arry
+
+  }
+
+
 }
