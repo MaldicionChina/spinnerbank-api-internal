@@ -1,19 +1,72 @@
 package controllers
 
-import play.api.mvc._
-import play.api.libs.json.{Writes, Json, JsValue}
+import javax.inject.Inject
+
+import org.joda.time.DateTime
+import play.api.mvc.{ Action, Controller, Request }
+import play.api.libs.json.{Writes, Json, JsValue,JsArray, JsObject}
 
 import com.github.nscala_time.time._
 import com.github.nscala_time.time.Imports._
 //import play.api.libs.ws.WS
-//import scala.concurrent.Future
+import scala.concurrent.Future
+import play.api.libs.concurrent.Execution.Implicits.defaultContext
 
+import reactivemongo.api.Cursor
+
+import models.JsonFormats._
 import models.Product
 import models.User
-import models.Movement
+import models.Movement, Movement._
 
-import models.User
 
+import play.modules.reactivemongo.json._
+import play.modules.reactivemongo.{
+  MongoController, ReactiveMongoApi, ReactiveMongoComponents
+}
+
+import play.modules.reactivemongo.json._, ImplicitBSONHandlers._
+import play.modules.reactivemongo.json.collection._
+
+
+
+class Application @Inject() (
+
+  val reactiveMongoApi: ReactiveMongoApi)
+    extends Controller with MongoController with ReactiveMongoComponents {
+           
+    def collection :JSONCollection = db.collection[JSONCollection]("movements")
+    
+    def home = Action {
+      Ok(views.html.home("spinnerbank-api-internal"))
+    }
+
+    
+      def findAllMovements = Action.async{
+        val cursor: Cursor[Movement] = collection.find(Json.obj()).cursor[Movement]
+        val futureMovementList: Future[List[Movement]] = cursor.collect[List]()
+        val futureMovementJsonArray :Future[JsArray]=futureMovementList.map{
+          movement => Json.arr(movement)
+        }
+        futureMovementJsonArray.map{
+          movement =>Ok(movement)
+        }
+    }
+    
+     def findById(id:Int) = Action.async{
+    
+        val cursor: Cursor[Movement] = collection.find(Json.obj("id"->id)).cursor[Movement]
+        val futureMovementList: Future[List[Movement]] = cursor.collect[List]()
+        val futureMovementJsonArray :Future[JsArray]=futureMovementList.map{
+          movement => Json.arr(movement)
+        }
+        futureMovementJsonArray.map{
+          movement =>Ok(movement)
+        }
+    }
+
+}
+/*
 object Application extends Controller {
 
   // Datos para HU 4
@@ -43,6 +96,10 @@ object Application extends Controller {
 //    "\"ProductId\":1,\"CustomerId\":1}}]"
 
   //  Return User's products based on id and types of document HU 4
+  
+  def home = Action {
+     Ok( views.html.home("spinnerbank-api-internal"))
+  }
   def productsUser(typeDocument: Int, idUser: Int) = Action {
     // Query a la base de datos SQL
 
@@ -78,3 +135,6 @@ object Application extends Controller {
     }
   }
 }
+*/
+
+
