@@ -1,3 +1,25 @@
 @(message: String)
 
 @message
+<dl>
+<dt>Para consultar movimiento  de un productos</dt>
+<dd>/user/{typeOfDocument}/{numberOdDocument}/product/{idProduct}/detail/  </dd>
+</dl>
+<br>
+<dl>
+<dt>Para consultar productos dado  tipo y numero de documento</dt>
+<dd>/user/{typeOfDocument}/{numberOdDocument}/products/    </dd>
+</dl>
+
+<dl>
+<dt>Posibles valores </dt>
+<dd>  typeOfDocument puede ser  1 ( cc ) , 2 (ti), 3 (nit)... y puede ser 1017224184, 123456 y 456789</dd>
+<dd>   numberOdDocument 1017224184, 123456 y 456789</dd>
+<dd>   idproduct  toma valores que se visualiza al consultar los productos de un usuario</dd>
+</dl>
+
+<dl>
+<dt> Ejemplos </dt>
+<dd> /user/1/1017224184/product/1/detail/</dd>
+<dd> /user/1/1017224184/products/</dd>
+</dl>
