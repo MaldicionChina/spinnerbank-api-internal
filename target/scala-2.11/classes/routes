@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           @controllers.Application.home
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+#Consultar movimientos de una cuenta    
+GET     /product/:idProduct/movements                               @controllers.Application.findMovement(idProduct:Int)
+    
+#Consultar productos dato tipo y numero de documento
+GET /user/:documentType/:documentNumber/products                    @controllers.Application.findProductsClient(documentType:String,documentNumber:Int)
+
+GET     /user/:documentType/:documentNumber/productos                   @controllers.Application.findClient(documentType:String,documentNumber:Int)
+
+
+#URL para consultar todos los movimientos Con mongo !!!!
+GET       /movements                  @controllers.Application.findAllMovements
+
+#URL para consultar movimientos de id
+GET       /movements/:id                 @controllers.Application.findMovementsById(id: Int)
+
+#Acceder a Legacy
+GET       /legacy/products/:idProduct    @controllers.Legacy.legacy(idProduct :Int)
