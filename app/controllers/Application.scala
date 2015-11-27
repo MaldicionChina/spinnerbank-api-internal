@@ -2,7 +2,6 @@ package controllers
 
 
 import javax.inject.Inject
-
 import play.api._
 import play.api.mvc._
 import org.joda.time.DateTime
@@ -26,6 +25,9 @@ import play.modules.reactivemongo.{
 
 import play.modules.reactivemongo.json._, ImplicitBSONHandlers._
 import play.modules.reactivemongo.json.collection._
+
+// Token JWT
+import authentikat.jwt._
 
 class Application @Inject() (
 
@@ -125,7 +127,7 @@ class Application @Inject() (
         
       def findClient(documentType:String,documentNumber:Int) = Action{
           
-          val result =users.filter(user => user.documentType == documentType && user.documentNumber == documentNumber)
+          val result = users.filter(user => user.documentType == documentType && user.documentNumber == documentNumber)
           
           if(result.size ==0) {
               Ok(error)
@@ -136,6 +138,34 @@ class Application @Inject() (
             }
           
       }    
+      
+      def authClient(documentType:String,documentNumber:Int, clientPassword: String)
+      {
+          val client = findClient(documentType,documentNumber)
+          // Comparación de contraseñas para autenticación
+          //if(){
+          // Autenticación Exitosa
+          // Ok()
+          //}else{
+          // Autenticación Fallida   
+          // badRequest()
+          //}
+          
+          val header = JwtHeader("HS256")
+          val claimsSet = JwtClaimsSet(
+            Map(
+            "documentType" -> documentType ,
+            "documentNumber" -> documentNumber.toString)
+            )
+            
+          val jwt: String = JsonWebToken(header, claimsSet, "secretkey")
+
+          Ok("Authenticación Exitosa").withHeaders(
+              "access_token"-> jwt,
+              "expires_in" -> "3600",
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+      }
       
 
 }
