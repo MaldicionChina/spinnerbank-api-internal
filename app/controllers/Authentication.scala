@@ -12,6 +12,8 @@ import play.api.libs.json.{Writes, Json, JsValue,JsArray, JsObject}
 
 class Authentication extends Controller {
     
+    val secretkey: String = "dbqdrpEE9Mm66VUXGegUCmse"
+    
     def auth() = Action {
                  
       // Comparación de contraseñas para autenticación
@@ -26,15 +28,16 @@ class Authentication extends Controller {
         val header = JwtHeader("HS256")
         val claimsSet = JwtClaimsSet(
             Map( 
-                "documentType" -> "CC" ,
-                "documentNumber" -> "123456789"
+                "iss"-> "spinnerbank-api-internal.herokuapp.com",
+                "exp"-> 1300819380,
+                "role"-> "assesor",
+                "sub" -> "alexisrodgtz@gmail.com"
                 )
             )
-        val jwt: String = JsonWebToken(header, claimsSet, "secretkey")
+            
+        val jwt: String = JsonWebToken(header, claimsSet, secretkey)
         
-        Ok("Authenticación Exitosa").withHeaders(
-            "access_token"-> jwt,
-            "expires_in" -> "3600")
+        Ok("access_token :"+jwt)
     }
     
     def home = Action {
