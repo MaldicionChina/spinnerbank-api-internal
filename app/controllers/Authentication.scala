@@ -14,7 +14,7 @@ class Authentication extends Controller {
     
     val secretkey: String = "dbqdrpEE9Mm66VUXGegUCmse"
     
-    def auth() = Action {
+    def auth(clientUser: String, passClient:String) = Action {
                  
       // Comparación de contraseñas para autenticación
       //if(){
