@@ -24,7 +24,7 @@ GET       /movements                  @controllers.Application.findAllMovements
 GET       /movements/:id                 @controllers.Application.findMovementsById(id: Int)
 
 #Acceder a Legacy
-GET       /legacy/products/:idProduct    @controllers.Legacy.legacy(idProduct :Int)
+GET       /legacy/:documentType/:documentNumber  @controllers.Legacy.legacy(documentType:String,documentNumber:Int)
 
 # Realizar Autenticación
 POST       /login/:clientUser/:passClient                 @controllers.Authentication.auth(clientUser: String, passClient:String)

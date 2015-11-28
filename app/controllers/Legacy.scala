@@ -15,18 +15,19 @@ class Legacy @Inject() (ws: WSClient) extends Controller{
     implicit val context = play.api.libs.concurrent.Execution.Implicits.defaultContext
 
    
-    def legacy(idProduct: Int) = Action.async{
+    def legacy(documentType:String,documentNumber:Int) = Action.async{
       
        
-       // ws.url("https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/"+idProduct+"/products").get().map { response => Ok(response.json) ---> esto para devolver el Json completo
-        
-       ws.url("https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/"+idProduct+"/products").get().map { response =>
-           val CustomerProduct =(response.json \\ "CustomerProduct")(0)
-           val product = Product((response.json \\ "id")(0).as[Int], "cc",(CustomerProduct \\"CustomerId")(0).as[Int], (response.json \\ "productType")(0).as[String],(response.json \\ "name")(0).as[String],(CustomerProduct \\"balance")(0).as[String].toDouble)
-           Ok(Json.toJson(product)).withHeaders(
-              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
-              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
-        }
+      // ws.url("https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/"+idProduct+"/products").get().map { response => Ok(response.json) ---> esto para devolver el Json completo
+       
+      ws.url("https://spinnerbank-api-legacy.herokuapp.com/api/v1/users/"+documentType+"-"+documentNumber+"/products").get().map { response =>
+          val CustomerProduct =(response.json \\ "products")(0)
+               //id: Int, clientIdType: String, clientIdNumber: Int, productType: String, productName: String, productBalance: Double
+          val product = Product(1,"Asesor",1,(CustomerProduct \\"productType")(0).as[String],(CustomerProduct \\"name")(0).as[String],(response.json \\ "balance")(0).as[Double])
+          Ok(Json.toJson(product)).withHeaders(
+             ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+             ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+       }
        
         
     }
