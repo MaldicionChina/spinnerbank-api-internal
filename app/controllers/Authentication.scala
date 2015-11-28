@@ -17,14 +17,9 @@ class Authentication extends Controller {
     def auth(clientUser: String, passClient:String) = Action {
                  
       // Comparación de contraseñas para autenticación
-      //if(){
+      if( (clientUser == "alexis") && (passClient == "123456") ){
       // Autenticación Exitosa
-      // Ok()
-      //}else{
-      // Autenticación Fallida   
-      // badRequest()
-      //}
-          
+                
         val header = JwtHeader("HS256")
         val claimsSet = JwtClaimsSet(
             Map( 
@@ -38,6 +33,11 @@ class Authentication extends Controller {
         val jwt: String = JsonWebToken(header, claimsSet, secretkey)
         
         Ok("access_token :"+jwt)
+      }else{
+      // Autenticación Fallida   
+        BadRequest("access_token :error 400")
+      }
+
     }
     
     def home = Action {
