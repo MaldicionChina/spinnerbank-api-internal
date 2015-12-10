@@ -1,0 +1,31 @@
+@(message: String)
+
+
+
+@message
+
+<dl>
+<dt>Para consultar movimiento  de un productos</dt>
+<dd> product/{:idProduct}/movements  donde  idProduct para pruebas puede tomar valor de 1, 2 3,4,5 y 6</dd>
+</dl>
+
+<dl>
+<dt>Para consultar productos dado  tipo y numero de documento</dt>
+<dd>/user/{documentType}/{documentoNumber}/products     donde documentType puede ser  cc ó ce... y documentNumber puede ser 123 ó 456</dd>
+</dl>
+
+<dl>
+<dt>Para Consultar solicidutes de un asesor</dt>
+<dd>/adviser/{idAdviser}/requests              idAdviser = 1216 o 4191 </dd>
+</dl>
+      
+
+<dl>
+<dt>Otra forma Para consultar productos dado  tipo y numero de documento (la ruta es con productos no con products)</dt>
+<dd>/user/{documentType}/{documentoNumber}/productos     donde documentType puede ser  cc ó ce... y documentNumber puede ser 123 ó 456</dd>
+</dl>
+
+<dl>
+<dt>Para consultar productos de un usuario desde legacy</dt>
+<dd>/legacy/products/{documentType}/{documentoNumber}  documentType = cc documentoNumber = 789456123</dd>
+</dl>
