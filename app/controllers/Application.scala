@@ -10,11 +10,13 @@ import scala.concurrent.Future
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 
 import models.MovementFormats._
+import models.RequestFormats._
 import models.UserFormats._
 import models.ProductFormats._
 import models.Product
 import models.User
 import models.Movement
+import models.Request
 
 import reactivemongo.api.Cursor
 
@@ -35,12 +37,13 @@ class Application @Inject() (
     extends Controller with MongoController with ReactiveMongoComponents {
            
     def collection :JSONCollection = db.collection[JSONCollection]("movements")
-    
+    def requestCollection :JSONCollection = db.collection[JSONCollection]("request")
+     
     def home = Action {
-      Ok(views.html.index("spinnerbank-api-internal"))
+      Ok(views.html.home("spinnerbank-api-internal"))
     }
-
     
+  
       def findAllMovements = Action.async{
         val cursor: Cursor[Movement] = collection.find(Json.obj()).cursor[Movement]
         val futureMovementList: Future[List[Movement]] = cursor.collect[List]()
@@ -63,6 +66,33 @@ class Application @Inject() (
         }
         futureMovementJsonArray.map{
           movement =>Ok(movement).withHeaders(
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+        }
+    }
+    
+       //Metodo para buscar solicitudes
+     def findAllRequest(idAdviser:Int) = Action.async{
+        val cursor: Cursor[Request] = requestCollection.find(Json.obj("idAdviser"->idAdviser)).cursor[Request]
+        val futureRequestList: Future[List[Request]] = cursor.collect[List]()
+        val futureRequestJsonArray :Future[JsArray]=futureRequestList.map{
+          request => Json.arr(request)
+        }
+        futureRequestJsonArray.map{
+          request =>Ok(request).withHeaders(
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+        }
+    }
+    
+    def findRequestByClient(idAdviser:Int,documentType:String,documentNumber:Int) = Action.async{
+        val cursor: Cursor[Request] = requestCollection.find(Json.obj("documentType"->documentType,"documentNumber"->documentNumber,"idAdviser"->idAdviser)).cursor[Request]
+        val futureRequestList: Future[List[Request]] = cursor.collect[List]()
+        val futureRequestJsonArray :Future[JsArray]=futureRequestList.map{
+          request => Json.arr(request)
+        }
+        futureRequestJsonArray.map{
+          request =>Ok(request).withHeaders(
               ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
               ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
         }
@@ -94,12 +124,48 @@ class Application @Inject() (
       var user1 = new User("cc",123,"Alexis","Rodriguez",products.filter(product =>product.clientIdType == "cc" &&product.clientIdNumber == 123))
       var user2 = new User("ce",456,"Emmanuel","Velez",products)
       var users =List(user1,user2)
-        
+     
+      var request1 =new Request(1,"cc",123,"Fer","Rodriguez",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",1216)
+      var request2 =new Request(2,"cc",123,"Fer","Rodriguez",25000000.0,"Crédito","Vivienda",new DateTime().toString(),"Aprobada",1216) 
+      var request3 =new Request(3,"cc",456,"Jose","Sanabria",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",4191)
+       var request4 =new Request(4,"cc",456,"Jose","Sanabria",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",1216)
+       
+      var requests = List (request1,request2,request3,request4)
+      
       val error : JsValue = Json.parse("""{"error":404, " description": "not found"}""")    
+      
     
+      def findRequestAdviser(idAdviser:Int) = Action{
+ 
+          val result = requests.filter(request =>request.idAdviser ==idAdviser)
+            if(result.size ==0) {
+              Ok(error)
+            }else {
+              Ok(Json.toJson(result)).withHeaders(
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+            }
+          
+      }
+      
+      
+      def findRequestClient(idAdviser:Int,documentType:String,documentNumber:Int)  = Action{
+ 
+          val result = requests.filter(request =>request.idAdviser ==idAdviser && request.documentType ==documentType && request.documentNumber == documentNumber)
+            if(result.size ==0) {
+              Ok(error)
+            }else {
+              Ok(Json.toJson(result)).withHeaders(
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+            }
+          
+      }
+      
+     
     
       def findMovement(idProduct:Int) = Action{
-          // val pr = usuarios.filter(usuario =>  usuario.documentType == typeDocument && usuario.documentNumber == idUser)
+       
           val result = movements.filter(movement =>movement.idProduct ==idProduct)
             if(result.size ==0) {
               Ok(error)
