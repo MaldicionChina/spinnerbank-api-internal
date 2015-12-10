@@ -14,17 +14,27 @@ GET     /product/:idProduct/movements                               @controllers
 #Consultar productos dato tipo y numero de documento
 GET /user/:documentType/:documentNumber/products                    @controllers.Application.findProductsClient(documentType:String,documentNumber:Int)
 
-GET     /user/:documentType/:documentNumber/productos                   @controllers.Application.findClient(documentType:String,documentNumber:Int)
+GET     /user/:documentType/:documentNumber/productos               @controllers.Application.findClient(documentType:String,documentNumber:Int)
 
+#Consultar solicidutes de un asesor
+GET /adviser/:idAdviser/requests                                   @controllers.Application.findRequestAdviser(idAdviser:Int) 
+
+GET  /adviser/:idAdviser/requests/:documentType/:documentNumber     @controllers.Application.findRequestClient(idAdviser:Int,documentType:String,documentNumber:Int) 
 
 #URL para consultar todos los movimientos Con mongo !!!!
-GET       /movements                  @controllers.Application.findAllMovements
+GET       /movements                                                 @controllers.Application.findAllMovements
 
 #URL para consultar movimientos de id
-GET       /movements/:id                 @controllers.Application.findMovementsById(id: Int)
+GET       /movements/:id                                             @controllers.Application.findMovementsById(id: Int)
+
+#URL para consultar solicitudes de productos Con mongo
+#GET       /adviser/:idAdviser/requests                              @controllers.Application.findAllRequest(idAdviser:Int)
+
+#URL para consultar solicitudes de productos por cliente Con mongo
+#GET      /adviser/:idAdviser/requests/:documentType/:documentNumber                    @controllers.Application.findRequestByClient(idAdviser:Int,documentType:String,documentNumber:Int)
 
 #Acceder a Legacy
-GET       /legacy/:documentType/:documentNumber  @controllers.Legacy.legacy(documentType:String,documentNumber:Int)
+GET       /legacy/:documentType/:documentNumber                      @controllers.Legacy.legacy(documentType:String,documentNumber:Int)
 
 # Realizar Autenticación
-POST       /login/:clientUser/:passClient                 @controllers.Authentication.auth(clientUser: String, passClient:String)
+POST       /login/:clientUser/:passClient                           @controllers.Authentication.auth(clientUser: String, passClient:String)   
