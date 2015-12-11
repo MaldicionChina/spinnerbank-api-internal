@@ -31,10 +31,13 @@ GET       /movements/:id                                             @controller
 #GET       /adviser/:idAdviser/requests                              @controllers.Application.findAllRequest(idAdviser:Int)
 
 #URL para consultar solicitudes de productos por cliente Con mongo
-#GET      /adviser/:idAdviser/requests/:documentType/:documentNumber                    @controllers.Application.findRequestByClient(idAdviser:Int,documentType:String,documentNumber:Int)
+#GET      /adviser/:idAdviser/requests/:documentType/:documentNumber @controllers.Application.findRequestByClient(idAdviser:Int,documentType:String,documentNumber:Int)
 
 #Acceder a Legacy
 GET       /legacy/:documentType/:documentNumber                      @controllers.Legacy.legacy(documentType:String,documentNumber:Int)
+
+#Obtener toda la información de los clientes
+GET       /client/:documentType/:documentNumber                      @controllers.Application.allClient(documentType:String,documentNumber:Int)
 
 # Realizar Autenticación
 POST       /login                           @controllers.Authentication.auth()
