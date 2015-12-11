@@ -1,49 +1,7 @@
-New log file opened at Tue Nov 24 17:24:40 COT 2015 by 25255@ferlinux-N551JK
-Taking next connection to: 50842
-New client attempting to connect on port: 38412-50842
-  Address = /127.0.1.1:50842
-This client on port 38412 has uuid eee2f802-839b-4654-9871-790c237211b8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-eee2f802-839b-4654-9871-790c237211b8
-Taking next connection to: 50842
-New client attempting to connect on port: 38433-50842
-  Address = /127.0.1.1:50842
-Handshake exception on socket: 38433
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 50842
-New client attempting to connect on port: 38434-50842
-  Address = /127.0.1.1:50842
-This client on port 38434 has uuid 3a432150-6cc5-42aa-ae51-2cfdf01e7143 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-eee2f802-839b-4654-9871-790c237211b8, play-fork-run-3a432150-6cc5-42aa-ae51-2cfdf01e7143
-Taking next connection to: 50842
-New client attempting to connect on port: 38565-50842
-  Address = /127.0.1.1:50842
-Handshake exception on socket: 38565
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 50842
-New client attempting to connect on port: 38566-50842
-  Address = /127.0.1.1:50842
-This client on port 38566 has uuid aaed8f2d-27b8-4ccc-a03e-ec80d9e8b9cb configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-eee2f802-839b-4654-9871-790c237211b8, play-fork-run-aaed8f2d-27b8-4ccc-a03e-ec80d9e8b9cb
-Taking next connection to: 50842
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 25255@ferlinux-N551JK logs at Tue Nov 24 17:31:11 COT 2015, goodbye.
+New log file opened at Thu Dec 10 21:45:05 COT 2015 by 31071@MacBook-Pro-de-emmanuel.local
+Taking next connection to: 50736
+New client attempting to connect on port: 50737-50736
+  Address = /192.168.0.17:50736
+This client on port 50737 has uuid ed1c5c83-13b9-41be-a776-ab2760554c0d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-ed1c5c83-13b9-41be-a776-ab2760554c0d
+Taking next connection to: 50736

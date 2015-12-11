@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/ferlinux/activator-dist-1.3.6/spinnerbank-api-internal-demo/conf/routes
-// @DATE:Tue Nov 24 15:49:39 COT 2015
+// @SOURCE:/Users/emmanuelhcpk/scala/jadiosa/spinnerbank-api-internal/conf/routes
+// @DATE:Thu Dec 10 21:35:47 COT 2015
 
 
 package router {

@@ -57,8 +57,8 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 12 16:19:55 COT 2015
-                  SOURCE: /home/ferlinux/activator-dist-1.3.6/spinnerbank-api-internal-demo/app/views/main.scala.html
+                  DATE: Thu Dec 10 21:20:00 COT 2015
+                  SOURCE: /Users/emmanuelhcpk/scala/jadiosa/spinnerbank-api-internal/app/views/main.scala.html
                   HASH: dc282e8cd845ba81640c95b00f1427dc4f5c12bf
                   MATRIX: 530->1|655->31|683->33|770->94|795->99|883->161|897->167|959->208|1046->269|1060->275|1120->314|1172->339|1187->345|1249->386|1343->453|1371->460|1403->465
                   LINES: 20->1|25->1|27->3|31->7|31->7|32->8|32->8|32->8|33->9|33->9|33->9|34->10|34->10|34->10|37->13|37->13|38->14

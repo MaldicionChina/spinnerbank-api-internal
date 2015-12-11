@@ -43,10 +43,9 @@ Seq[Any](format.raw/*1.19*/("""
 <dd>/user/"""),format.raw/*19.11*/("""{"""),format.raw/*19.12*/("""documentType"""),format.raw/*19.24*/("""}"""),format.raw/*19.25*/("""/"""),format.raw/*19.26*/("""{"""),format.raw/*19.27*/("""documentoNumber"""),format.raw/*19.42*/("""}"""),format.raw/*19.43*/("""/productos     donde documentType puede ser  cc ó ce... y documentNumber puede ser 123 ó 456</dd>
 </dl>
 
-
 <dl>
-<dt>Para consulta prducto desde legacy</dt>
-<dd>/legacy/products/:idProduct    idProduct  = 1</dd>
+<dt>Para consultar productos de un usuario desde legacy</dt>
+<dd>/legacy/products/"""),format.raw/*24.22*/("""{"""),format.raw/*24.23*/("""documentType"""),format.raw/*24.35*/("""}"""),format.raw/*24.36*/("""/"""),format.raw/*24.37*/("""{"""),format.raw/*24.38*/("""documentoNumber"""),format.raw/*24.53*/("""}"""),format.raw/*24.54*/("""  """),format.raw/*24.56*/("""documentType = cc documentoNumber = 789456123</dd>
 </dl>
 """))
       }
@@ -68,11 +67,11 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 24 17:26:17 COT 2015
-                  SOURCE: /home/ferlinux/activator-dist-1.3.6/spinnerbank-api-internal-demo/app/views/index.scala.html
-                  HASH: f67930fd9e1e5100b46182956f0d9f570ec4284b
-                  MATRIX: 527->1|639->18|669->23|695->30|723->32|820->102|848->103|885->113|913->114|1117->290|1146->291|1186->303|1215->304|1244->305|1273->306|1316->321|1345->322|1613->562|1642->563|1682->575|1711->576|1740->577|1769->578|1812->593|1841->594
-                  LINES: 20->1|25->1|29->5|29->5|31->7|33->9|33->9|33->9|33->9|38->14|38->14|38->14|38->14|38->14|38->14|38->14|38->14|43->19|43->19|43->19|43->19|43->19|43->19|43->19|43->19
+                  DATE: Thu Dec 10 21:20:00 COT 2015
+                  SOURCE: /Users/emmanuelhcpk/scala/jadiosa/spinnerbank-api-internal/app/views/index.scala.html
+                  HASH: 6ae17c47816e0e16f3bb8fba980b0b8480dfb529
+                  MATRIX: 527->1|639->18|669->23|695->30|723->32|820->102|848->103|885->113|913->114|1117->290|1146->291|1186->303|1215->304|1244->305|1273->306|1316->321|1345->322|1613->562|1642->563|1682->575|1711->576|1740->577|1769->578|1812->593|1841->594|2061->786|2090->787|2130->799|2159->800|2188->801|2217->802|2260->817|2289->818|2319->820
+                  LINES: 20->1|25->1|29->5|29->5|31->7|33->9|33->9|33->9|33->9|38->14|38->14|38->14|38->14|38->14|38->14|38->14|38->14|43->19|43->19|43->19|43->19|43->19|43->19|43->19|43->19|48->24|48->24|48->24|48->24|48->24|48->24|48->24|48->24|48->24
                   -- GENERATED --
               */
           

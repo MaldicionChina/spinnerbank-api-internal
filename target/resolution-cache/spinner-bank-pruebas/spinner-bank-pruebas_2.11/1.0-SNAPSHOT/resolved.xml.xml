@@ -4,7 +4,7 @@
 		module="spinner-bank-pruebas_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151124134525"
+		publication="20151210214244"
 	>
 		<description>
 		spinner-bank-pruebas
@@ -46,5 +46,6 @@
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.4.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.4.3" conf="test->default(compile)"/>
 		<dependency org="org.reactivemongo" name="play2-reactivemongo_2.11" rev="0.11.0.play24" conf="compile->default(compile)"/>
+		<dependency org="com.jason-goodwin" name="authentikat-jwt_2.11" rev="0.4.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

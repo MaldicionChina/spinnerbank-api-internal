@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/ferlinux/activator-dist-1.3.6/spinnerbank-api-internal-demo/conf/routes
-// @DATE:Tue Nov 24 15:49:39 COT 2015
+// @SOURCE:/Users/emmanuelhcpk/scala/jadiosa/spinnerbank-api-internal/conf/routes
+// @DATE:Thu Dec 10 21:35:47 COT 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -12,17 +12,17 @@ import _root_.controllers.Assets.Asset
 // @LINE:6
 package controllers {
 
-  // @LINE:27
+  // @LINE:37
   class ReverseLegacy(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:27
-    def legacy(idProduct:Int): Call = {
+    // @LINE:37
+    def legacy(documentType:String, documentNumber:Int): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "legacy/products/" + implicitly[PathBindable[Int]].unbind("idProduct", idProduct))
+      Call("GET", _prefix + { _defaultPrefix } + "legacy/" + implicitly[PathBindable[String]].unbind("documentType", dynamicString(documentType)) + "/" + implicitly[PathBindable[Int]].unbind("documentNumber", documentNumber))
     }
   
   }
@@ -42,6 +42,27 @@ package controllers {
   
   }
 
+  // @LINE:40
+  class ReverseAuthentication(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:41
+    def index(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "check/")
+    }
+  
+    // @LINE:40
+    def auth(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "login")
+    }
+  
+  }
+
   // @LINE:6
   class ReverseApplication(_prefix: => String) {
     def _defaultPrefix: String = {
@@ -49,10 +70,22 @@ package controllers {
     }
 
   
+    // @LINE:20
+    def findRequestAdviser(idAdviser:Int): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "adviser/" + implicitly[PathBindable[Int]].unbind("idAdviser", idAdviser) + "/requests")
+    }
+  
     // @LINE:15
     def findProductsClient(documentType:String, documentNumber:Int): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "user/" + implicitly[PathBindable[String]].unbind("documentType", dynamicString(documentType)) + "/" + implicitly[PathBindable[Int]].unbind("documentNumber", documentNumber) + "/products")
+    }
+  
+    // @LINE:22
+    def findRequestClient(idAdviser:Int, documentType:String, documentNumber:Int): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "adviser/" + implicitly[PathBindable[Int]].unbind("idAdviser", idAdviser) + "/requests/" + implicitly[PathBindable[String]].unbind("documentType", dynamicString(documentType)) + "/" + implicitly[PathBindable[Int]].unbind("documentNumber", documentNumber))
     }
   
     // @LINE:17
@@ -67,7 +100,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "product/" + implicitly[PathBindable[Int]].unbind("idProduct", idProduct) + "/movements")
     }
   
-    // @LINE:24
+    // @LINE:28
     def findMovementsById(id:Int): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "movements/" + implicitly[PathBindable[Int]].unbind("id", id))
@@ -79,7 +112,7 @@ package controllers {
       Call("GET", _prefix)
     }
   
-    // @LINE:21
+    // @LINE:25
     def findAllMovements(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "movements")

@@ -1,6 +1,6 @@
-[0m[[31merror[0m] [0m/home/ferlinux/activator-dist-1.3.6/spinnerbank-api-internal-demo/app/controllers/Legacy.scala:23: Cannot find an implicit ExecutionContext. You might pass[0m
-[0m[[31merror[0m] [0man (implicit ec: ExecutionContext) parameter to your method[0m
-[0m[[31merror[0m] [0mor import scala.concurrent.ExecutionContext.Implicits.global.[0m
-[0m[[31merror[0m] [0m       ws.url("https://spinnerbank-api-legacy.herokuapp.com/api/v1/customers/"+idProduct+"/products").get().map { response =>[0m
-[0m[[31merror[0m] [0m                                                                                                                ^[0m
+[0m[[31merror[0m] [0m/Users/emmanuelhcpk/scala/jadiosa/spinnerbank-api-internal/app/controllers/Auth.scala:12: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Option[String][0m
+[0m[[31merror[0m] [0m required: Boolean[0m
+[0m[[31merror[0m] [0m        if (valor) {[0m
+[0m[[31merror[0m] [0m            ^[0m
 [0m[[31merror[0m] [0mone error found[0m

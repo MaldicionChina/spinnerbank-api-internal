@@ -12,12 +12,20 @@ import play.api.libs.json.{Writes, Json, JsValue,JsArray, JsObject}
 
 class Authentication extends Controller {
     
+
+    def index = AuthAction {
+        Ok(views.html.index("You are logged in."))
+      }
+      
     val secretkey: String = "dbqdrpEE9Mm66VUXGegUCmse"
     
-    def auth(clientUser: String, passClient:String) = Action {
-                 
+    def auth() = Action { request =>
+
+     def name = request.body.asFormUrlEncoded.get("email")(0)  
+     def password = request.body.asFormUrlEncoded.get("password")(0)                 
+               
       // Comparación de contraseñas para autenticación
-      if( (clientUser == "alexis") && (passClient == "123456") ){
+      if( (name == "alexis") && (password == "123456") ){
       // Autenticación Exitosa
                 
         val header = JwtHeader("HS256")
