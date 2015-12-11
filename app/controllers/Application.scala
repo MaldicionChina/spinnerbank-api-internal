@@ -13,8 +13,10 @@ import models.MovementFormats._
 import models.RequestFormats._
 import models.UserFormats._
 import models.ProductFormats._
+import models.ClientFormats._
 import models.Product
 import models.User
+import models.Client
 import models.Movement
 import models.Request
 
@@ -128,11 +130,28 @@ class Application @Inject() (
       var request1 =new Request(1,"cc",123,"Fer","Rodriguez",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",1216)
       var request2 =new Request(2,"cc",123,"Fer","Rodriguez",25000000.0,"Crédito","Vivienda",new DateTime().toString(),"Aprobada",1216) 
       var request3 =new Request(3,"cc",456,"Jose","Sanabria",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",4191)
-       var request4 =new Request(4,"cc",456,"Jose","Sanabria",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",1216)
+      var request4 =new Request(4,"cc",456,"Jose","Sanabria",250000.0,"Ahorro","CDAT",new DateTime().toString(),"Pendiente",1216)
+      
+      var cliente = new Client("cc",123,"Rafael","Patiño","flameAdmin@flame.com",
+                            "12345678","calle 67 No. 53 - 108", "-112.234,33.5",
+                            "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12243113_903274886427851_7865177271505574706_n.jpg?oh=38daf22dee688eaf59f5d6abf448e41d&oe=57205168&__gda__=1457947230_5294a5ec394e64f5658488678468a3ab" )
+                            
+      val error : JsValue = Json.parse("""{"error":404, " description": "not found"}""")                            
+
+      def allClient(documentType:String,documentNumber:Int) = Action{
+          
+          if("cc" == documentType && 123 == documentNumber){
+              Ok(Json.toJson(cliente)).withHeaders(
+              ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+              ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
+          }else{
+              Ok(error)
+          }
+      } 
        
       var requests = List (request1,request2,request3,request4)
       
-      val error : JsValue = Json.parse("""{"error":404, " description": "not found"}""")    
+          
       
     
       def findRequestAdviser(idAdviser:Int) = Action{
