@@ -41,7 +41,9 @@ class Authentication extends Controller {
             
         val jwt: String = JsonWebToken(header, claimsSet, secretkey)
         
-        Ok("access_token :"+jwt)
+        Ok("access_token :"+jwt).withHeaders(
+             ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+             ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
       }else{
       // Autenticación Fallida   
         BadRequest("access_token :error 400")
@@ -56,10 +58,14 @@ class Authentication extends Controller {
               "\"email\": \"flameAdmin@flame.com\","+
               "\"id\": \"1216\""+
             "}]";
-        Ok(info)
+        Ok(info).withHeaders(
+             ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+             ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
     }
     
     def home = Action {
-      Ok(views.html.index("spinnerbank-api-internal"))
+      Ok(views.html.index("spinnerbank-api-internal")).withHeaders(
+             ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+             ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
     }
 }
