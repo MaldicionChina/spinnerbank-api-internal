@@ -25,16 +25,17 @@ class Authentication extends Controller {
      def password = request.body.asFormUrlEncoded.get("password")(0)                 
                
       // Comparación de contraseñas para autenticación
-      if( (name == "alexis") && (password == "123456") ){
+      if( (name == "flameAdmin@flame.com") && (password == "F14M3") ){
       // Autenticación Exitosa
                 
         val header = JwtHeader("HS256")
         val claimsSet = JwtClaimsSet(
             Map( 
                 "iss"-> "spinnerbank-api-internal.herokuapp.com",
-                "exp"-> 1300819380,
-                "role"-> "assesor",
-                "sub" -> "alexisrodgtz@gmail.com"
+                "role"-> "user",
+                "email" -> "flameAdmin@flame.com",
+                "id" -> "10122015"
+                
                 )
             )
             
