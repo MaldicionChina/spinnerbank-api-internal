@@ -141,7 +141,7 @@ class Application @Inject() (
       def allClient(documentType:String,documentNumber:Int) = Action{
           
           if("cc" == documentType && 123 == documentNumber){
-              Ok(Json.toJson(cliente)).withHeaders(
+              Ok("["+Json.toJson(cliente)+"]").withHeaders(
               ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
               ACCESS_CONTROL_ALLOW_HEADERS -> "Origin, X-Requested-With, Content-Type, Accept,Referer, User-Agent")
           }else{
