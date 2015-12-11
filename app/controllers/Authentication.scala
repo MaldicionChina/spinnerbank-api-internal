@@ -34,7 +34,7 @@ class Authentication extends Controller {
                 "iss"-> "spinnerbank-api-internal.herokuapp.com",
                 "role"-> "user",
                 "email" -> "flameAdmin@flame.com",
-                "id" -> "10122015"
+                "id" -> "1216"
                 
                 )
             )
