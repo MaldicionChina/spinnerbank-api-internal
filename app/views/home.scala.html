@@ -29,3 +29,21 @@
 <dt>Para consultar productos de un usuario desde legacy</dt>
 <dd>/legacy/products/{documentType}/{documentoNumber}  documentType = cc documentoNumber = 789456123</dd>
 </dl>
+
+<dl>
+<dt>Para autenticación</dt>
+<dd>/login </dd>
+<dd>Debe usar método POST</dd>
+<dd>Debe enviar en el body del request la siguiente información</dd>
+<dd>key : value</dd>
+<dd>email : flameAdmin arroba flame.com</dd>
+<dd>password : F14M3</dd>
+<dd>Este servisio retorna un token JWT, el cual en el body</dd>
+<dd>contendrá la siguiente informaición</dd>
+<dd>{</dd>  
+<dd>"iss": "spinnerbank-api-internal.herokuapp.com",</dd>
+<dd>"role": "user",</dd>
+<dd>"email": "flameAdmin arroba flame.com",</dd>
+<dd>"id": "10122015"</dd>
+<dd>}</dd>
+</dl>
