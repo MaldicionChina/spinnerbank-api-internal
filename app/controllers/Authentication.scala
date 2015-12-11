@@ -49,6 +49,16 @@ class Authentication extends Controller {
 
     }
     
+    def temporalEmberAuth(user:String,pass:String) = Action{
+         val info = "{"+
+              "\"iss\":  \"spinnerbank-api-internal.herokuapp.com\","+
+              "\"role\":  \"user\","+
+              "\"email\": \"flameAdmin@flame.com\","+
+              "\"id\": \"1216\""+
+            "}";
+        Ok(info)
+    }
+    
     def home = Action {
       Ok(views.html.index("spinnerbank-api-internal"))
     }

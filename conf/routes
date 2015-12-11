@@ -42,3 +42,6 @@ GET       /client/:documentType/:documentNumber                      @controller
 # Realizar Autenticación
 POST       /login                           @controllers.Authentication.auth()
 POST       /check/                 @controllers.Authentication.index() 
+
+# Realizar Autenticación Temporal
+GET /temp/login/:username/:password @controllers.Authentication.temporalEmberAuth(username:String,password:String) 
